@@ -28,6 +28,7 @@ export default {
         content: 'Developer Student Clubs - NIT Rourkela',
       },
     ],
+    script: [{ src: 'https://unpkg.com/ionicons@5.2.3/dist/ionicons.js' }],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
