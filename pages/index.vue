@@ -9,8 +9,7 @@
           tile
           light
           :large="$vuetify.breakpoint.mdAndUp"
-          :medium="$vuetify.breakpoint.sm"
-          :small="$vuetify.breakpoint.xs"
+          :medium="$vuetify.breakpoint.smAndBelow"
           elevation="4"
           class="my-btn explore-btn"
         >
@@ -31,6 +30,9 @@
       </div>
       <div class="cont">
         <div class="cont-box cont-box-1">
+          <div class="cont-box--icon">
+            <ion-icon name="book"></ion-icon>
+          </div>
           <div class="cont-box--body">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -43,6 +45,9 @@
           </div>
         </div>
         <div class="cont-box cont-box-2">
+          <div class="cont-box--icon">
+            <ion-icon name="shapes"></ion-icon>
+          </div>
           <div class="cont-box--body">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -55,6 +60,9 @@
           </div>
         </div>
         <div class="cont-box cont-box-3">
+          <div class="cont-box--icon">
+            <ion-icon name="construct"></ion-icon>
+          </div>
           <div class="cont-box--body">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -67,6 +75,18 @@
           </div>
         </div>
       </div>
+      <div class="action">
+        <v-btn
+          tile
+          light
+          :large="$vuetify.breakpoint.mdAndUp"
+          :medium="$vuetify.breakpoint.smAndBelow"
+          elevation="4"
+          class="my-btn join-btn"
+        >
+          <h1>Join Us</h1>
+        </v-btn>
+      </div>
     </section>
   </v-layout>
 </template>
@@ -77,7 +97,7 @@ export default {}
 
 <style lang="scss" scoped>
 #first-page {
-  margin-bottom: max(24px, 5vw);
+  margin-bottom: max(50px, 5vw);
   .first-page--image {
     img {
       width: max(80%, 60vw);
@@ -97,21 +117,52 @@ export default {}
     margin: 0 25px;
   }
   .cont {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 0;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+
     &-box {
       height: 300px;
       width: 250px;
+      margin: 2rem 2vw;
       border: 3px solid #fff;
+      border-radius: 25px 25px 10px 10px;
+      display: grid;
+      grid-template-rows: 250px 45px;
+      position: relative;
 
-      &-body {
+      &--icon {
+        position: absolute;
+        top: -5%;
+        right: -5%;
+        padding: 5px;
+        background-color: #2c2c2c;
+        ion-icon {
+          font-size: 7rem;
+        }
       }
-      &-title {
+
+      &--body {
+        padding: 50px 25px;
+        font-size: 16px;
+        text-align: left;
+        line-height: 1.2;
+        font-weight: 400;
       }
-    }
-    &-box-1 {
-    }
-    &-box-2 {
-    }
-    &-box-3 {
+      &--title {
+        background-color: #fff;
+        color: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          font-weight: 500;
+          font-size: 3rem;
+        }
+      }
     }
   }
 }

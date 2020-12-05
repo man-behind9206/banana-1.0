@@ -34,7 +34,8 @@ p.head_desc {
 
 .my-btn {
   border-radius: 5px !important;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out !important;
+  padding: 0 26px !important;
   &:hover {
     transform: scale(1.01);
   }
