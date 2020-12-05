@@ -97,7 +97,7 @@ export default {}
 
 <style lang="scss" scoped>
 #first-page {
-  margin-bottom: max(50px, 5vw);
+  margin-bottom: max(50px, 6vw);
   .first-page--image {
     img {
       width: max(80%, 60vw);
@@ -133,6 +133,12 @@ export default {}
       display: grid;
       grid-template-rows: 250px 45px;
       position: relative;
+      opacity: 0.8;
+      transition: all 0.1s ease;
+
+      &:hover {
+        opacity: 1;
+      }
 
       &--icon {
         position: absolute;
