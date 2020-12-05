@@ -138,6 +138,7 @@ export default {
       transform: rotate(30deg);
       z-index: 20;
       transition: all 0.4s ease;
+      pointer-events: none;
     }
 
     &:hover {
