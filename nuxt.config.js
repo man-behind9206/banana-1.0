@@ -46,12 +46,28 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
+
+  loading: {
+    color: 'white',
+    height: '3px',
+  },
+
+  loadingIndicator: {
+    name: 'pulse',
+    color: '#fff',
+    background: '#000',
+  },
+
   plugins: [],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
    */
   components: true,
+
+  router: {
+    prefetchLinks: false,
+  },
   /*
    ** Nuxt.js dev-modules
    */
@@ -83,7 +99,7 @@ export default {
     customVariables: ['~/assets/variables.scss'],
     treeShake: true,
     theme: {
-      dark: true,
+      dark: 'true',
       themes: {
         dark: {
           primary: colors.blue.darken2,
