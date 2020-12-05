@@ -74,12 +74,65 @@ export default {
     li {
       // font-size: 7.5rem;
       font-size: clamp(4rem, 10vw, 7.5rem);
+      position: relative;
+      transition: all 0.3s cubic-bezier(0.65, 0, 0.5, 1);
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -8%;
+        display: block;
+        height: 100%;
+        width: 0%;
+        background-color: white;
+        z-index: -1;
+        transform: skew(-10deg);
+        transition: all 0.3s cubic-bezier(0.65, 0, 0.5, 1);
+      }
+
+      &:hover {
+        &::before {
+          width: 120%;
+        }
+      }
 
       a {
+        display: inline-block;
         text-decoration: none;
-        color: #fff;
+        height: 100%;
+        width: 100%;
+        transition: all 0.3s cubic-bezier(0.65, 0, 0.5, 1);
+
+        &:hover {
+          color: #fff !important;
+          -webkit-text-stroke-width: 4px;
+          @media (max-width: 700px) {
+            -webkit-text-stroke-width: 3px;
+          }
+          @media (max-width: 550px) {
+            -webkit-text-stroke-width: 2px;
+          }
+          -webkit-text-stroke-color: #2c2c2c;
+        }
       }
     }
   }
 }
+
+.nuxt-link-exact-active {
+  color: #2c2c2c !important;
+  -webkit-text-stroke-width: 3px;
+  @media (max-width: 700px) {
+    -webkit-text-stroke-width: 2px;
+  }
+  @media (max-width: 550px) {
+    -webkit-text-stroke-width: 1px;
+  }
+  -webkit-text-stroke-color: #fff;
+}
 </style>
+
+/* &::before { content: ''; display: block; position: absolute; top: 0; left: 0;
+height: 100%; width: 0%; background-color: white; z-index: -1; } &:hover {
+color: #fff; -webkit-text-stroke-width: 4px; -webkit-text-stroke-color: #2c2c2c;
+} &:hover::before { width: 100%; } */
