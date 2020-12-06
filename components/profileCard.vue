@@ -11,7 +11,10 @@
         <div class="content">
           <div class="head">
             <div class="user-img">
-              <img :src="member.img" :alt="member.name" />
+              <img
+                :src="'member-photos/512/' + member.id + '.jpg'"
+                :alt="member.name"
+              />
             </div>
             <p class="name">{{ member.name }}</p>
             <p class="desc">{{ member.desc }}</p>
