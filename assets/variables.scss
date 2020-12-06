@@ -3,7 +3,8 @@
 // The variables you want to modify
 
 $body-font-family: 'Montserrat', sans-serif !default;
-$font-size-root: 10px;
+
+$btn-transition-duration: 0.1s !important !default;
 
 .theme--dark.v-navigation-drawer,
 .theme--dark.v-app-bar {

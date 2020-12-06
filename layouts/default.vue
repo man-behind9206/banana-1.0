@@ -87,6 +87,7 @@ export default {
         background-color: white;
         z-index: -1;
         transform: skew(-10deg);
+        border-radius: 5px;
         transition: all 0.3s cubic-bezier(0.65, 0, 0.5, 1);
       }
 

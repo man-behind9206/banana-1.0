@@ -22,8 +22,6 @@ export default {
           id: 'abel-mathew',
           name: 'Abel MAthew',
           desc: 'Ex-DSC Lead',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FAM.jpg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -38,8 +36,6 @@ export default {
           id: 'harish-teens',
           name: 'Harish Teens',
           desc: 'DSC Lead',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FHarish.jpg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -54,8 +50,6 @@ export default {
           id: 'ankesh-anku',
           name: 'Ankesh Anku',
           desc: 'App Development',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FAA.jpeg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -70,8 +64,6 @@ export default {
           id: 'ashwin-sekari',
           name: 'Ashwin Sekhari',
           desc: 'Blockchain',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FAS.jpeg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -86,8 +78,6 @@ export default {
           id: 'chinmay-kabi',
           name: 'Chinmay Kabi',
           desc: 'App Development',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FChinmayKabi.jpeg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -102,8 +92,6 @@ export default {
           id: 'ritom-sonowal',
           name: 'Ritom Sonowal',
           desc: 'Web Development',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FRitom Sonowal.jpeg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -118,8 +106,6 @@ export default {
           id: 'roshan-shaw',
           name: 'Roshan Shaw',
           desc: 'Web Development',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2Frkshaw.jpeg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -134,8 +120,6 @@ export default {
           id: 'reuben-abraham',
           name: 'Reuben Abraham',
           desc: 'Designer',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FReuben%20Abraham.jpeg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -150,8 +134,6 @@ export default {
           id: 'shaswat-lenka',
           name: 'Shaswat Lenka',
           desc: 'Web Development',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FShaswat Lenka.JPG?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -166,8 +148,6 @@ export default {
           id: 'smarak-das',
           name: 'Smarak Das',
           desc: 'App Development',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FSmarak_Das.JPG?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -182,8 +162,6 @@ export default {
           id: 'ritesh-patil',
           name: 'Ritesh Patil',
           desc: 'Web Development',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FRitesh.jpeg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -198,8 +176,6 @@ export default {
           id: 'abhibhaw',
           name: 'Abhibhaw',
           desc: 'App Development',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FAbhibhaw.jpeg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -214,8 +190,6 @@ export default {
           id: 'astha-nayak',
           name: 'Astha Nayak',
           desc: 'App Development',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FAstha.jpeg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -230,8 +204,6 @@ export default {
           id: 'ankit-kumar',
           name: 'Ankit Kumar',
           desc: 'Web Development',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FAnkit.jpg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -246,8 +218,6 @@ export default {
           id: 'patibanda-sriram',
           name: 'Patibanda Sriram',
           desc: 'App Development',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FSriram.jpg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
@@ -262,8 +232,6 @@ export default {
           id: 'manikandan',
           name: 'Manikandan',
           desc: 'Web Development',
-          img:
-            'https://firebasestorage.googleapis.com/v0/b/project-banana-4822.appspot.com/o/images%2FMani.jpeg?alt=media',
           cont:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           social: {
