@@ -119,14 +119,47 @@
         </v-btn>
       </div>
     </section>
+
+    <section id="projects">
+      <div class="head">
+        <h1 class="head_text">Projects</h1>
+        <p class="head_desc desc">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+      </div>
+      <div class="cont">
+        <div class="project-list">
+          <ProjectCard
+            class="projectcard"
+            v-for="project in projects"
+            :project="project"
+            :key="project.id"
+          />
+        </div>
+      </div>
+      <div class="action">
+        <v-btn
+          tile
+          light
+          :large="$vuetify.breakpoint.mdAndUp"
+          :medium="$vuetify.breakpoint.smAndBelow"
+          elevation="4"
+          class="my-btn join-btn"
+        >
+          <h1>Way to All Repo</h1>
+        </v-btn>
+      </div>
+    </section>
   </v-layout>
 </template>
 
 <script>
 import EventCard from '~/components/EventCard'
+import ProjectCard from '~/components/ProjectCard'
 export default {
   components: {
     EventCard,
+    ProjectCard,
   },
   data() {
     return {
@@ -236,6 +269,44 @@ export default {
           date: 'Jan 09, 2020',
         },
       ],
+      projects: [
+        {
+          id: 1,
+          cover: '/project-covers/1.png',
+          title: 'Avacado',
+          desc:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua defantu. ',
+          contr: '40',
+          forks: '29',
+        },
+        {
+          id: 2,
+          cover: '/project-covers/2.png',
+          title: 'Banana',
+          desc:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua defantu. ',
+          contr: '40',
+          forks: '29',
+        },
+        {
+          id: 3,
+          cover: '/project-covers/3.png',
+          title: 'Cherry',
+          desc:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua defantu. ',
+          contr: '40',
+          forks: '29',
+        },
+        {
+          id: 4,
+          cover: '/project-covers/4.png',
+          title: 'Dates',
+          desc:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua defantu. ',
+          contr: '40',
+          forks: '29',
+        },
+      ],
     }
   },
 }
@@ -321,9 +392,11 @@ export default {
 }
 
 #events {
+  margin-bottom: max(50px, 6vw);
   .head {
   }
   .cont {
+    margin: 50px auto;
     .event-list {
       display: flex;
       flex-wrap: nowrap;
@@ -362,6 +435,23 @@ export default {
         @media (min-width: 1200px) {
           margin: 3rem 4rem;
         }
+      }
+    }
+  }
+}
+
+#projects {
+  margin-bottom: max(50px, 6vw);
+  .cont {
+    margin: 50px auto;
+    .project-list {
+      display: grid;
+      grid-column-gap: max(5rem, 5vw);
+      grid-row-gap: max(5rem, 3vw);
+      // grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-template-columns: repeat(2, minmax(400px, 1fr));
+      @media (max-width: 840px) {
+        grid-template-columns: repeat(1, minmax(400px, 1fr));
       }
     }
   }
