@@ -426,8 +426,6 @@ export default {
 
 #events {
   margin-bottom: max(50px, 6vw);
-  .head {
-  }
   .cont {
     margin: 50px auto;
     .event-list {
@@ -571,8 +569,6 @@ export default {
         align-items: center;
         margin: 2rem;
 
-        .icon {
-        }
         .cont {
           text-align: left;
 
@@ -588,14 +584,8 @@ export default {
         display: flex;
         align-items: center;
         margin: 2rem;
-        .icon {
-        }
-        .cont {
-        }
       }
     }
-  }
-  &-bottom {
   }
 }
 </style>
