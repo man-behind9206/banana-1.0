@@ -5,7 +5,7 @@
     </div>
     <div class="event-cont">
       <div class="event-cont--cover">
-        <img :src="event.cover" :alt="event.det.title" />
+        <img :src="event.cover" :alt="event.det.title" loading="lazy" />
       </div>
       <div class="event-cont--orgs">
         <div class="orgs">
@@ -45,8 +45,15 @@ export default {
   border-radius: 0 0 60px 60px;
   overflow: hidden;
   background-color: #2c2c2c25;
-  box-shadow: 5px 5px 20px #000;
+  box-shadow: 5px 5px 20px #000000bb;
   position: relative;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.99);
+
+  &:hover {
+    box-shadow: 5px 5px 20px #000;
+    transform: scale(1);
+  }
 
   @media (min-width: 600px) {
     &:hover {
@@ -57,7 +64,7 @@ export default {
   }
   .event-soon {
     position: absolute;
-    z-index: 5;
+    z-index: 3;
     right: 10px;
     top: 0px;
     width: 50px;

@@ -1,6 +1,12 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer v-model="rightDrawer" right fixed width="100%">
+    <v-navigation-drawer
+      mobile-breakpoint="1921"
+      v-model="rightDrawer"
+      right
+      fixed
+      width="100%"
+    >
       <v-btn icon absolute top right @click="closeDrawer" class="pa-2">
         <v-icon @click="rightDrawer = false" x-large>mdi-close</v-icon>
       </v-btn>

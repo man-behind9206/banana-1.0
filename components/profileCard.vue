@@ -14,6 +14,7 @@
               <img
                 :src="'member-photos/512/' + member.id + '.jpg'"
                 :alt="member.name"
+                loading="lazy"
               />
             </div>
             <p class="name">{{ member.name }}</p>

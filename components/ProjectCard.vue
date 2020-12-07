@@ -1,7 +1,7 @@
 <template>
   <div class="project">
     <div class="project-cover">
-      <img :src="project.cover" :alt="project.title" />
+      <img :src="project.cover" :alt="project.title" loading="lazy" />
     </div>
     <div class="project-cont">
       <h2 class="project-cont--title">{{ project.title }}</h2>
@@ -37,9 +37,16 @@ export default {
   grid-template-columns: 3fr 5fr;
 
   border-radius: 30px;
-  box-shadow: 5px 5px 20px #000;
+  box-shadow: 5px 5px 20px #000000bb;
   overflow: hidden;
   margin: 0 auto;
+  transform: scale(0.99);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1);
+    box-shadow: 5px 5px 20px #000;
+  }
 
   @media (max-width: 450px) {
     width: 300px;

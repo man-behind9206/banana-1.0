@@ -10,7 +10,6 @@
           light
           :large="$vuetify.breakpoint.mdAndUp"
           :medium="$vuetify.breakpoint.smAndBelow"
-          elevation="4"
           class="my-btn explore-btn"
         >
           <h1>Explore Now</h1>
@@ -81,7 +80,6 @@
           light
           :large="$vuetify.breakpoint.mdAndUp"
           :medium="$vuetify.breakpoint.smAndBelow"
-          elevation="4"
           class="my-btn join-btn"
         >
           <h1>Join Us</h1>
@@ -112,7 +110,6 @@
           light
           :large="$vuetify.breakpoint.mdAndUp"
           :medium="$vuetify.breakpoint.smAndBelow"
-          elevation="4"
           class="my-btn join-btn"
         >
           <h1>Wanna Attend!</h1>
@@ -143,7 +140,6 @@
           light
           :large="$vuetify.breakpoint.mdAndUp"
           :medium="$vuetify.breakpoint.smAndBelow"
-          elevation="4"
           class="my-btn join-btn"
         >
           <h1>Way to All Repo</h1>
@@ -425,9 +421,15 @@ export default {
 }
 
 #events {
-  margin-bottom: max(50px, 6vw);
+  margin-bottom: max(60px, 6vw);
+  .head {
+    margin: 0 20px;
+  }
   .cont {
     margin: 50px auto;
+    @media (max-width: 700px) {
+      margin: 30px auto;
+    }
     .event-list {
       display: flex;
       flex-wrap: nowrap;
@@ -479,10 +481,14 @@ export default {
     margin: 0 auto 50px;
   }
 
+  .head {
+    margin: 0 20px;
+  }
+
   .cont {
     margin: 50px auto;
     @media (min-width: 400px) {
-      margin: 50px auto;
+      margin: 70px auto;
     }
 
     .project-list {
