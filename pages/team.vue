@@ -3,17 +3,17 @@
     <h1 class="head_text text-center">This is Us.</h1>
     <div id="team-wrap">
       <div class="profiles">
-        <profileCard v-for="member in team" :member="member" :key="member.id" />
+        <ProfileCard v-for="member in team" :member="member" :key="member.id" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import profileCard from '~/components/profileCard'
+import ProfileCard from '~/components/ProfileCard'
 export default {
   components: {
-    profileCard,
+    ProfileCard,
   },
   data() {
     return {
