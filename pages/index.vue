@@ -150,16 +150,49 @@
         </v-btn>
       </div>
     </section>
+    <section id="footer" class="footer">
+      <div class="footer-top">
+        <div class="footer-top--left">
+          <img src="/icon-crop.png" alt="DSC icon" />
+          <h1 class="dsc-title">Developer Students Club</h1>
+          <h2 class="dsc-place">NIT Rourkela</h2>
+        </div>
+        <div class="footer-top--right">
+          <div class="location">
+            <div class="icon">
+              <ion-icon name="location-sharp"></ion-icon>
+            </div>
+            <div class="cont">
+              <h3>National Institute of Technology</h3>
+              <h4>Rourkela, Orissa</h4>
+            </div>
+          </div>
+          <div class="mail">
+            <div class="icon">
+              <ion-icon name="mail-open-sharp"></ion-icon>
+            </div>
+            <div class="cont">
+              <h3><span>Mails @ </span>dsc.nitr@gmail.com</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <MyFooter />
+      </div>
+    </section>
   </v-layout>
 </template>
 
 <script>
 import EventCard from '~/components/EventCard'
 import ProjectCard from '~/components/ProjectCard'
+import MyFooter from '~/components/MyFooter'
 export default {
   components: {
     EventCard,
     ProjectCard,
+    MyFooter,
   },
   data() {
     return {
@@ -442,18 +475,127 @@ export default {
 
 #projects {
   margin-bottom: max(50px, 6vw);
+
+  @media (max-width: 400px) {
+    width: 340px;
+    margin: 0 auto 50px;
+  }
+
   .cont {
     margin: 50px auto;
+    @media (min-width: 400px) {
+      margin: 50px auto;
+    }
+
     .project-list {
       display: grid;
       grid-column-gap: max(5rem, 5vw);
       grid-row-gap: max(5rem, 3vw);
+      justify-content: center;
       // grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
       grid-template-columns: repeat(2, minmax(400px, 1fr));
       @media (max-width: 840px) {
         grid-template-columns: repeat(1, minmax(400px, 1fr));
       }
     }
+  }
+}
+
+.footer {
+  font-size: 8px;
+  width: min(1400px, 90vw);
+  margin-top: 5rem;
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &--left {
+      text-align: left;
+      @media (max-width: 600px) {
+        text-align: center;
+        margin: 2rem;
+      }
+      img {
+        width: min(250px, 20vw);
+        margin-bottom: 2rem;
+      }
+      h1.dsc-title {
+        font-size: 4rem;
+        @media (max-width: 1000px) {
+          font-size: 3rem;
+        }
+        @media (min-width: 701px) and (max-width: 800px) {
+          font-size: 2.5rem;
+        }
+      }
+      h2.dsc-place {
+        font-size: 3rem;
+        font-weight: 500;
+        @media (max-width: 1000px) {
+          font-size: 2rem;
+        }
+        @media (min-width: 701px) and (max-width: 800px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    &--right {
+      @media (max-width: 600px) {
+        text-align: center;
+        margin: 2rem;
+      }
+      ion-icon {
+        font-size: 4rem;
+        margin-right: 2rem;
+      }
+      h3 {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 600;
+        @media (min-width: 701px) and (max-width: 800px) {
+          font-size: 1.5rem;
+        }
+        span {
+          font-weight: 500;
+        }
+      }
+      .location {
+        display: flex;
+        align-items: center;
+        margin: 2rem;
+
+        .icon {
+        }
+        .cont {
+          text-align: left;
+
+          h4 {
+            font-size: 1.75rem;
+            @media (min-width: 701px) and (max-width: 800px) {
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+      .mail {
+        display: flex;
+        align-items: center;
+        margin: 2rem;
+        .icon {
+        }
+        .cont {
+        }
+      }
+    }
+  }
+  &-bottom {
   }
 }
 </style>
