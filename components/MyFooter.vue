@@ -50,9 +50,7 @@
       </div>
     </div>
     <div class="copyright">
-      <span class="copy">
-        &copy; 2020, DSC NIT Rourkela, All Rights Reserved
-      </span>
+      <span class="copy"> &copy; 2020, DSC NIT Rourkela, All Rights Reserved </span>
     </div>
   </div>
 </template>
@@ -79,6 +77,7 @@ export default {}
     margin: 0 auto;
     p {
       font-size: 2.5rem;
+      text-align: center;
       position: relative;
 
       &::after {
@@ -160,6 +159,7 @@ export default {}
       text-align: right;
     }
     &-middle {
+      text-align: center;
       position: relative;
       &::after {
         content: '';

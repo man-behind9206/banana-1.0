@@ -16,3 +16,17 @@ $btn-transition-duration: 0.1s !important !default;
 .v-application a {
   color: #fff;
 }
+.v-btn__content {
+  font-weight: 600 !important;
+}
+.v-expansion-panel-heade {
+  font-size: 2rem !important;
+}
+.theme--dark.v-expansion-panels .v-expansion-panel {
+  background-color: #2c2c2c;
+}
+.v-expansion-panel {
+  &::before {
+    box-shadow: none !important;
+  }
+}

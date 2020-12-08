@@ -5,14 +5,8 @@
         <img src="/DSC_cover.png" alt="DSC Cover" />
       </div>
       <div class="first-page--actions py-1 py-lg-5">
-        <v-btn
-          tile
-          light
-          :large="$vuetify.breakpoint.mdAndUp"
-          :medium="$vuetify.breakpoint.smAndBelow"
-          class="my-btn explore-btn"
-        >
-          <h1>Explore Now</h1>
+        <v-btn tile light :large="$vuetify.breakpoint.mdAndUp" :medium="$vuetify.breakpoint.smAndBelow" class="my-btn explore-btn">
+          Explore Now
         </v-btn>
       </div>
     </section>
@@ -21,10 +15,8 @@
       <div class="head">
         <h1 class="head_text">Who Are We?</h1>
         <p class="head_desc desc">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem sint
-          excepturi recusandae possimus dolores eos aspernatur nemo delectus
-          illum voluptates corrupti corporis adipisci eveniet eius porro unde,
-          maiores placeat laborum.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem sint excepturi recusandae possimus dolores eos aspernatur nemo
+          delectus illum voluptates corrupti corporis adipisci eveniet eius porro unde, maiores placeat laborum.
         </p>
       </div>
       <div class="cont">
@@ -34,8 +26,7 @@
           </div>
           <div class="cont-box--body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud.
             </p>
           </div>
@@ -49,8 +40,7 @@
           </div>
           <div class="cont-box--body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud.
             </p>
           </div>
@@ -64,8 +54,7 @@
           </div>
           <div class="cont-box--body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud.
             </p>
           </div>
@@ -75,14 +64,8 @@
         </div>
       </div>
       <div class="action">
-        <v-btn
-          tile
-          light
-          :large="$vuetify.breakpoint.mdAndUp"
-          :medium="$vuetify.breakpoint.smAndBelow"
-          class="my-btn join-btn"
-        >
-          <h1>Join Us</h1>
+        <v-btn tile light :large="$vuetify.breakpoint.mdAndUp" :medium="$vuetify.breakpoint.smAndBelow" class="my-btn join-btn">
+          Join Us
         </v-btn>
       </div>
     </section>
@@ -90,29 +73,16 @@
     <section id="events">
       <div class="head">
         <h1 class="head_text">Events</h1>
-        <p class="head_desc desc">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        </p>
+        <p class="head_desc desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
       </div>
       <div class="cont">
         <div class="event-list">
-          <EventCard
-            class="eventcard"
-            v-for="event in events"
-            :event="event"
-            :key="event.id"
-          />
+          <EventCard class="eventcard" v-for="event in events" :event="event" :key="event.id" />
         </div>
       </div>
       <div class="action">
-        <v-btn
-          tile
-          light
-          :large="$vuetify.breakpoint.mdAndUp"
-          :medium="$vuetify.breakpoint.smAndBelow"
-          class="my-btn join-btn"
-        >
-          <h1>Wanna Attend!</h1>
+        <v-btn tile light :large="$vuetify.breakpoint.mdAndUp" :medium="$vuetify.breakpoint.smAndBelow" class="my-btn join-btn">
+          Wanna Attend!
         </v-btn>
       </div>
     </section>
@@ -120,29 +90,16 @@
     <section id="projects">
       <div class="head">
         <h1 class="head_text">Projects</h1>
-        <p class="head_desc desc">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        </p>
+        <p class="head_desc desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
       </div>
       <div class="cont">
         <div class="project-list">
-          <ProjectCard
-            class="projectcard"
-            v-for="project in projects"
-            :project="project"
-            :key="project.id"
-          />
+          <ProjectCard class="projectcard" v-for="project in projects" :project="project" :key="project.id" />
         </div>
       </div>
       <div class="action">
-        <v-btn
-          tile
-          light
-          :large="$vuetify.breakpoint.mdAndUp"
-          :medium="$vuetify.breakpoint.smAndBelow"
-          class="my-btn join-btn"
-        >
-          <h1>Way to All Repo</h1>
+        <v-btn tile light :large="$vuetify.breakpoint.mdAndUp" :medium="$vuetify.breakpoint.smAndBelow" class="my-btn join-btn">
+          Way to All Repo
         </v-btn>
       </div>
     </section>
